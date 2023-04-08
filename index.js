@@ -1,0 +1,1 @@
+document.getElementById("Skhae").innerHTML = "Su kari soma skehe";
