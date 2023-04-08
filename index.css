@@ -1,6 +1,13 @@
+<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
+=======
+.class {
+overfloew:hidden;
+background-color:red;
+color:red;
+>>>>>>> 408cd03aeff031f899fc8d0af4ed7dffbeeb755a
 }
 body{
     height:200vh;
