@@ -35,22 +35,3 @@ header section{
    
 }
 
-nav ul li {
-    display:inline;
-   
-    
-}
-nav ul li a{
-    text-decoration: none;
-    display:inline-block;
-    padding:1em;
-}
-
-nav ul li:nth-child(1)
-{
-    padding-left:0;
-}
-
-a:hover{
-    background-color: aquamarine;
-}
