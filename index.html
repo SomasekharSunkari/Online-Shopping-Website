@@ -16,11 +16,13 @@
 </head>
 
 <body>
+    <div id="sectionHome">
     <header>
         <h1><span>O</span>nline <span>S</span>hopping <span>P</span>ortal</h1>
         <section>
-            <button class="btn btn-primary"  style="max-height:15vh;max-width:15vw;font-size:2vh;margin:0.5vh;padding:1vh 1vw 1vh 1vw">Log in</button>
-            <button class="btn btn-primary"  style="max-height:15vh;max-width:15vw;font-size:2vh;margin:0.5vh;padding:1vh 1vw 1vh 1vw">Sign Up</button>
+            <button class="btn btn-primary" onclick="display('sectionLogin')" style="max-height:15vh;max-width:15vw;font-size:2vh;margin:0.5vh;padding:1vh 1vw 1vh 1vw" >Log in</button>
+            
+            <button class="btn btn-primary"  style="max-height:15vh;max-width:15vw;font-size:2vh;margin:0.5vh;padding:1vh 1vw 1vh 1vw" id="sectionButton">Sign Up</button>
         </section>
     </header>
    
@@ -34,13 +36,37 @@
         <li><a href="@">Help</a></li>
         <li><a href="@">Subscribe</a></li>
         <!-- <li><a href="@">Sekhar</a></li> -->
-
     </ul>
 </nav>
+<br><br><br><br><br>
+<br><br>
+<div id="sectionLogin">
+    <form action="@">
+        <h1>Log In</h1><br>
+        <!-- <label for="Label">Name</label> -->
+        <br>
+        <br>
+        <input type="text" name="Name" id="Label" placeholder="Username..">
+        <br>
+        <br><br><br>
+        <!-- <label for="Password">Password</label> -->
+<br>
+        <input type="password" name="Password" id="Password" placeholder="Password">
+        <br>
+        <br><br><br><br><br>
+        <!-- <input type="button" value="Log in"> -->
+        <button>Login</button>
+        <br>
+        <p>Already have an account <span><a href="#">Sign Up</a></span></p>
+        <button class="btn btn-outline" style="height:4vh" onclick="display('sectionHome')" >Back</button>
+    </form>
+</div>
     </main>
     <footer>
 
     </footer>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
     <script src="index.js"></script>
 </body>
 
