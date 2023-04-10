@@ -40,12 +40,17 @@ div form input{
    border-right:none;
 }
 div form input:focus{
-    /* border:none 1px none none; */
-    border-top:0;
-    border-left:0;
+    height:5vh;
+    width:13vw;
     padding:20px;
+    background-color:transparent;
+    color:black;
+    margin-left:1vw;
+    border-top:0;
+    font-size:2vh;
+    border-left:0;
     border-bottom:2px solid white;
-    border-right:0;
+    border-right:none;
    
 }
 #sectionLogin p{
@@ -61,15 +66,21 @@ div form input:focus{
 }
 div form label{
     font-size:4vh;
+    word-spacing: calc(tan(30));
     text-align:left!important;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
 }
- #sectionLogin{
+ div #sectionLogin{
     border-radius:5em;
-   background-color: rgb(17, 127, 127);
+   background-image:linear-gradient(to bottom right, red, yellow);
+  animation-name:form;
+  animation-duration:2s;
+animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+animation-iteration-count:infinite;
+animation-fill-mode: forwards;
    max-width:25vw;
-   height:50vh;
+   height:55vh;
    margin-left:auto;
    text-align:center;
    margin-right: auto;
@@ -102,10 +113,7 @@ header section{
     
    clear: both;
 }
-nav{
-    position: relative;
-   top:2vh;
-}
+
 li a{
   text-decoration: none;  
   font-size:2vh;
@@ -121,4 +129,9 @@ float:left;
 nav ul li a:hover{
     background-color: black;
     color:white;
+}
+@keyframes form {
+ from {background-color:green;}   
+ to{background-color: red;}
+    
 }
