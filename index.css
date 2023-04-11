@@ -11,6 +11,61 @@ background:url("/Online\ -\ imges.jpg") no-repeat top left,url("/Online-shoping.
 background-size:35vh 33vh ,39vh 33vh,90vw 33vh;
             /*Width  Height*/
 }
+::placeholder{
+    color:black;
+}
+#sectionSignup input[type="text"]
+{
+    padding: 0 0 0.3vw 2.2vw;
+    font-size:2vh;
+    height:5vh;
+    width:20vw;
+    border:none;
+}
+#sectionSignup input[type="text"]:focus{
+    box-shadow:5px 5px 2px 3px rgba(124, 124, 235,1),-5px -5px 2px 3px rgb(18, 180, 180);
+
+  
+}
+#sectionSignup input[class="Password"]
+{
+    padding: 0 3vw 0.3vw 2.2vw;
+    font-size:2vh;
+    height:5vh;
+    width:20vw;
+    border:none;
+    background-image:url("/Lock.jpg");
+    background-size: 7%;
+background-repeat:no-repeat;
+background-position:20px 10px;
+}
+#sectionSignup input[class="firstName"]
+{
+    /* background-image:<i class="fa-solid fa-person-simple"></i>; */
+    background-image:url("/userpic.jpg");
+    background-size: 8%;
+background-repeat:no-repeat;
+background-position:20px 10px;
+}
+#sectionSignup{
+    height:50vh;
+    margin-left: auto;
+    text-align: center;
+    margin-right: auto;
+    max-width:25vw;
+    border:2px solid black;
+    background-color: blueviolet;
+
+}
+#sectionSignup h1{
+    color:white;
+    margin:2vh;
+    font-size:5vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    overflow: auto;
+}
 div form h1{
     text-align: center;
     font-size: 9vh;
@@ -18,11 +73,11 @@ div form h1{
     padding-top:0.2em;
     font-weight: bold;
 }
-::placeholder{
+/* ::placeholder{
     color:white;
     transition: all 0.2s ease-in-out;
 
-}
+} */
 ::placeholder:hover{
     transform:translate(-10%,-10%);
 
@@ -73,9 +128,9 @@ div form label{
 }
  div #sectionLogin{
     border-radius:5em;
-   background-image:linear-gradient(to bottom right, red, yellow);
+   /* background-image:linear-gradient(to bottom right, red, yellow); */
   animation-name:form;
-  animation-duration:2s;
+  animation-duration:1s;
 animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 animation-iteration-count:infinite;
 animation-fill-mode: forwards;
@@ -131,7 +186,10 @@ nav ul li a:hover{
     color:white;
 }
 @keyframes form {
- from {background-color:green;}   
- to{background-color: red;}
+ 0% {background-color:black;}   
+ 25% {background-color: red;}
+ 50%{background-color:yellow};
+ 75%{background-color:blueviolet};
+ 100%{background-color: rgb(18, 180, 180);}
     
 }
