@@ -5,14 +5,22 @@
 }
 
 header{
-max-width:100%;
+
 height:30vh;
+width:100%;
 background:url("/Online\ -\ imges.jpg") no-repeat top left,url("/Online-shoping.jpg") no-repeat top right,linear-gradient(to bottom right,rgba(75, 71, 71, 0.671),rgba(17, 16, 16, 0.826),rgba(126, 111, 111, 0.918))  ;
-background-size:35vh 33vh ,39vh 33vh,90vw 33vh;
+background-size:34vh 30vh ,39vh 33vh,90vw 33vh;
             /*Width  Height*/
 }
 ::placeholder{
     color:black;
+}
+#first_Buttons
+{position: absolute;
+    height:20vh;
+    width:20vw;
+    margin-bottom:60vh;
+    
 }
 #sectionSignup input[type="text"]
 {
@@ -108,6 +116,7 @@ div form input:focus{
     border-right:none;
    
 }
+
 #sectionLogin p{
     font-size:2vh;
     padding-top:1em;
